@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/notificationIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_music"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="Now Playing"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/playPauseButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_play"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/stopButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_stop"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:scaleType="centerInside" />
+</LinearLayout>
